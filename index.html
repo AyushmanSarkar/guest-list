@@ -1,0 +1,57 @@
+<html>
+    <head>
+    <title>Guest List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ba9ef1e8db.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    </head>
+    <body>
+        <div align="center">
+        <h1 id="Title">Guest List</h1>
+        <div id="break"></div>
+        <span>
+            <div class="form-group">
+            <input class="form-field" type="text" id="textInput" placeholder="Enter the name here">
+            <label for="name" class="form-label">Enter the name here</label>
+            </div>
+        </span>
+        <button class="button" onclick="submitName()" id="submit">Submit</button>
+        <hr>
+        <p id="Unsorted List"></p>
+        <hr>
+        <button class="button" onclick="showList()" id="show">Show</button>
+        <p id="Ordered List"></p>
+        <hr>
+        <button class="button" onclick="sortList()" id="sort">Sort</button>
+        <p id="Sort Ordered List"></p>
+        <hr>
+        <div class="search-box">
+            <input id="search-txt" class="search-txt" type="text" placeholder="Type to search">
+            <a onclick="searchItem()" class="search-btn">
+                <i onclick="searchItem()" class="fas fa-search fa-lg"></i>
+            </a>
+            
+        
+        </div>
+        <br>
+            <p id="search_result">Search results are displayed here</p>
+            <br>
+        </div>
+        
+        <hr>
+    </body>
+</html>
